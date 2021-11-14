@@ -1,0 +1,1020 @@
+/* 
+
+Main styles for all user facing pages except contact us page.
+
+*/
+
+:root {
+  /* Variables */
+  --offcanvas-width: 240px;
+  --topMenu: 56px;
+  --darkblue: #131532;
+  --lighterblue: #1e203c;
+  --brightergreen: #06d6a0;
+  --lightgreen: #68be91;
+  --ligthred: #e63946;
+  --lightyellow: #ead150;
+}
+
+#dashboard-sidebar {
+  width: var(--offcanvas-width);
+  background: var(--darkblue);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
+}
+p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 24px;
+}
+a {
+  text-decoration: none !important;
+}
+
+.copyright-text {
+  text-transform: uppercase;
+}
+#logo-brand {
+  color: var(--brightergreen);
+}
+
+.main-button a {
+  background-color: var(--lightgreen);
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.main-button a:hover {
+  opacity: 0.7;
+}
+.section-heading {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.section-heading .line-dec {
+  width: 30px;
+  height: 5px;
+  background-color: var(--lightgreen) !important;
+}
+.section-heading h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-top: 15px;
+}
+
+/* Header  Area Style */
+.navbar .navbar-brand {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 25px 0px;
+}
+.bg-dark {
+  background-color: #fff !important;
+  border-bottom: 1px solid #eee;
+}
+#navbarResponsive {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  left: 50%;
+  top: 105px;
+  transform: translateX(-50%);
+}
+#navbarResponsive li a {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-transform: capitalize !important;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  margin: 0px 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e1e1e;
+  transition: all 0.5s;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: var(--brightergreen);
+}
+.navbar:after {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -52px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-dark .navbar-toggler {
+  border-color: var(--lightgreen);
+  background-color: var(--lightgreen) !important;
+  height: 50px;
+  outline: none;
+}
+.navbar-dark .navbar-toggler-icon:after {
+  content: "\f0c9";
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "FontAwesome";
+}
+/* Banner Area Style */
+.banner {
+  margin-top: 50px;
+  background-image: url(../images/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0px;
+  background-position: center center;
+  /* max-height: 500px; */
+}
+.banner .caption {
+  background-color: #ead150;
+  padding: 25px;
+  max-width: 600px;
+  border-radius: 40px 5px;
+  /* border-radius: 4px; */
+  transition-property: transform;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+#contact-new .line-dec {
+  width: 30px;
+  height: 5px;
+  background-color: var(--lightgreen) !important;
+}
+.banner .caption h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+.banner .caption .line-dec {
+  width: 30px;
+  height: 5px;
+  background-color: var(--brightergreen);
+}
+.banner .caption p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+.banner .btn-banner {
+  background-color: #000;
+  width: 150px;
+  color: #fff;
+}
+.banner .btn-banner:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Featured Section Style */
+.featured-items {
+  margin-bottom: 70px;
+}
+.featured-item {
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 20px;
+  transition: all 0.5s;
+}
+.featured-item:hover {
+  opacity: 0.9;
+}
+.featured-item img {
+  width: 100%;
+}
+.featured-item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+
+.featured-item h6,
+.right-content h6 {
+  color: var(--lightgreen) !important;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.featured-item .add-to-cart {
+  color: #1e1e1e;
+  max-width: 70%;
+  border: 1px solid var(--brightergreen);
+  outline: var(--brightergreen);
+  padding: 0.7em !important;
+}
+.featured-item .add-to-cart:hover {
+  background-color: var(--brightergreen) !important;
+  color: #fff;
+  border: 1px solid var(--darkblue);
+  outline: var(--darkblue);
+  font-weight: 700;
+}
+.owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.owl-theme .owl-dots .owl-dot {
+  outline: none;
+}
+.owl-theme .owl-dots .active span {
+  background-color: var(--lightgreen) !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #aaa;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0px 5px;
+  outline: none;
+}
+
+/* Styles for the Subscribe section */
+.subscribe-form {
+  background-color: var(--lightyellow) !important;
+  padding: 80px 0px;
+  text-align: center;
+}
+.subscribe-form .section-heading {
+  margin-top: 0px;
+}
+.subscribe-form .section-heading h1 {
+  color: #1e1e1e;
+}
+.subscribe-form .section-heading .line-dec {
+  background-color: #fff;
+  margin: 0 auto;
+}
+.subscribe-form .main-content p {
+  font-size: 17px;
+  color: #1e1e1e;
+  margin-bottom: 30px;
+}
+.subscribe-form .main-content form {
+  color: #1e1e1e;
+  display: inline;
+}
+.subscribe-form .main-content form input {
+  display: inline;
+}
+.subscribe-form .main-content form input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #1e1e1e;
+  background-color: transparent;
+  padding-left: 15px;
+  color: #1e1e1e;
+  outline: none;
+}
+.subscribe-form .main-content form button:focus {
+  color: #fff;
+  background-color: #1e1e1e;
+}
+.subscribe-form .main-content form button {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  background-color: var(--lightgreen);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  transition: all 0.5s;
+  box-shadow: none;
+  border: none;
+}
+#form-submit {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#form-submit:hover {
+  background-color: #fff !important;
+  color: #1e1e1e !important;
+}
+
+/* Styles for Footer section */
+.footer {
+  text-align: center;
+}
+.footer ul {
+  padding: 0px;
+  margin: 0px;
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+.footer .logo img {
+  max-width: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.footer .footer-menu {
+  margin-bottom: 40px;
+}
+.footer .footer-menu ul li {
+  margin: 0px 15px;
+}
+.footer .footer-menu a {
+  font-size: 13px;
+  color: #7a7a7a;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.footer .footer-menu a:hover {
+  color: var(--brightergreen) !important;
+  text-decoration: none;
+}
+.footer .social-icons {
+  margin-bottom: 60px;
+}
+.footer .social-icons ul li {
+  margin: 0px 10px;
+}
+.footer .social-icons a {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  background-color: var(--lighterblue) !important;
+  text-align: center;
+  display: inline-block;
+  line-height: 33px;
+  border-radius: 50%;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+.footer .social-icons a:hover {
+  background-color: var(--brightergreen) !important;
+}
+
+/* Stylles for Sub Footer  */
+.sub-footer {
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.sub-footer p {
+  font-size: 12px;
+  color: #7a7a7a;
+  line-height: 60px;
+}
+
+/* Styles for Featured Page  */
+.featured-page {
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+.featured-page .section-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.featured-page #filters {
+  margin-top: 15px;
+  text-align: right;
+}
+.featured .featured-item {
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.featured .featured-item h4 {
+  transition: all 0.5s;
+}
+
+#filter button {
+  outline: none;
+}
+#filter .btn-primary.focus,
+.btn-primary:focus {
+  color: #3a8bcd !important;
+  box-shadow: none !important;
+}
+#filters .btn-primary {
+  color: #1e1e1e;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+/* Isotope Transitions*/
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+
+.page-navigation ul {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 30px 0px 0px 0px;
+  margin: 0px 0px 80px 0px;
+}
+.page-navigation ul li {
+  display: inline-block;
+}
+.page-navigation ul li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #1e1e1e;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.page-navigation ul li a:hover,
+.page-navigation ul li.current-page a {
+  background-color: var(--brightergreen);
+  border-color: var(--lightgreen);
+  color: #fff;
+}
+
+/* Styles for Single Product  */
+.single-product .product-slider {
+  padding: 20px;
+  border: 1px solid #eee !important;
+  border-radius: 5px;
+}
+.flexslider {
+  border: none !important;
+}
+#carousel {
+  margin-top: 20px;
+}
+#carousel .slides li {
+  width: 150px !important;
+}
+.single-product .right-content h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 0px;
+}
+#single-product-main-img img {
+  max-width: 400px !important;
+  height: 350px;
+}
+.single-product .right-content h6 {
+  color: #4a4a4a;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.single-product .right-content p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.single-product .right-content span {
+  font-size: 14px;
+  color: var(--ligthred) !important;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.single-product .right-content label {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.single-product .right-content .btn-order {
+  background-color: var(--brightergreen) !important;
+}
+.single-product .right-content .quantity-text {
+  margin-left: 10px;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  border: 1px solid #eee;
+}
+.single-product .right-content .button {
+  margin-left: 15px;
+  cursor: pointer;
+  background-color: #3a8bcd;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  transition: all 0.5s;
+  box-shadow: none;
+  border: none;
+}
+.single-product .right-content .down-content span {
+  margin-bottom: 0px;
+  display: inline-block;
+  margin-left: 8px;
+  color: #aaa;
+}
+.single-product .right-content .down-content span a {
+  color: #aaa;
+  font-weight: 400;
+  margin-left: 4px;
+  transition: all 0.5s;
+}
+.single-product .right-content .down-content span a:hover {
+  color: #3a8bcd;
+}
+.single-product .right-content .down-content span a:hover i {
+  background-color: #3a8bcd;
+}
+.single-product .right-content .down-content span a i {
+  transition: all 0.5s;
+  background-color: #aaa;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.single-product .right-content .down-content .categories {
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding: 10px 0px;
+}
+.single-product .right-content .down-content .share {
+  border-top: 1px solid #eee;
+  padding: 10px 0px;
+}
+
+.single-product .right-content .down-content .share h6 span a i {
+  background-color: var(--darkblue);
+}
+.single-product .right-content .down-content .share h6 span a i:hover {
+  background-color: var(--brightergreen);
+}
+.single-product .right-content .down-content h6 {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 400;
+}
+
+/* Styles for About page */
+.about-page {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.about-page .right-content h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.about-page .left-image img {
+  max-width: 100%;
+}
+.about-page .right-content span {
+  display: inline-block;
+  margin-left: 8px;
+}
+.about-page .right-content span a i {
+  transition: all 0.5s;
+  background-color: #aaa;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.about-page .right-content .share {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding: 15px 0px;
+}
+.about-page .right-content h6 {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 400;
+}
+.about-page .right-content span a:hover i {
+  background-color: var(--brightergreen);
+}
+/* Styles for form controls and input */
+#btn-search {
+  color: var(--lightgreen);
+  background-color: #fff;
+}
+#search-field {
+  background-color: #fff !important;
+  /* border-radius: 5px !important; */
+}
+.form-control {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #eee;
+}
+.form-control input[type="text"]:focus {
+  outline: none;
+}
+
+.product-image {
+  transition: all 0.5s ease;
+}
+.product-image:hover {
+  transform: scale(1.5);
+}
+
+/* Contact Page Style */
+/* I put contact page styles in a different file - contact.css  under assets/zac/css  except these two line - they are for all*/
+/* clear placeholder text on focus */
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* Styles for Responsive design */
+@media (max-width: 991px) {
+  .banner {
+    border-top: none;
+    margin-top: 0px;
+  }
+  .navbar .navbar-brand {
+    width: auto;
+  }
+  .navbar:after {
+    display: none;
+  }
+  #navbarResponsive {
+    z-index: 99999;
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.95);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-dark .navbar-nav .nav-item {
+    border-bottom: 1px solid #eee;
+  }
+  .navbar-dark .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 15px 0px;
+  }
+  .featured-page #filters {
+    text-align: right;
+  }
+  .single-product .right-content {
+    margin-top: 30px;
+  }
+  .about-page .right-content {
+    margin-top: 30px;
+  }
+  .featured-page {
+    margin-top: 80px;
+  }
+  .about-page {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe-form .main-content form input.button {
+    margin-top: 20px;
+  }
+  .featured-page #filters {
+    margin-top: 15px;
+    text-align: left;
+  }
+}
+
+/* Styles for 404 page  */
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 560px;
+  width: 100%;
+  padding-left: 160px;
+  line-height: 1.1;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-image: url("images/emoji.png");
+  background-size: cover;
+}
+
+.notfound .notfound-404:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2.4);
+  -ms-transform: scale(2.4);
+  transform: scale(2.4);
+  border-radius: 50%;
+  background-color: #f2f5f8;
+  z-index: -1;
+}
+
+.notfound h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #151723;
+  text-transform: uppercase;
+}
+
+.notfound h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #151723;
+}
+
+.notfound p {
+  font-family: "Nunito", sans-serif;
+  color: #999fa5;
+  font-weight: 400;
+}
+
+.notfound a {
+  font-family: "Nunito", sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #388dbc;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    width: 110px;
+    height: 110px;
+  }
+  .notfound {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 110px;
+  }
+}
+
+/* TOP HEADER */
+
+.header-main {
+  position: relative;
+  padding: 6px 0;
+  background-color: var(--lightyellow);
+  max-height: 70px;
+  /* color: var(--lighterblue) !important; */
+}
+
+.logo {
+  /* color: #fff; */
+  color: var(--lighterblue);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.brand-wrap {
+  text-decoration: none !important;
+}
+
+.icon-sm {
+  width: 48px;
+  height: 48px;
+  line-height: 48px !important;
+  font-size: 20px;
+}
+
+.widget-header {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.widget-header .notify {
+  position: absolute;
+  top: -3px;
+  right: -10px;
+}
+
+.notify {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 3rem;
+  color: #fff;
+  /* background-color: #fa3434; */
+}
+
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+.search-form {
+  /* border: 1px solid #ffffff !important; */
+  /* border-bottom: 1px solid #fff !important; */
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.search-button {
+  color: var(--lighterblue);
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.search-button:hover {
+  color: var(--lightgreen);
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-main {
+  background-color: #fff;
+}
+
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-toggler {
+  padding: 4px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.37rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.5rem 7px 0px;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.45rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url(https://img.icons8.com/ios/50/000000/menu.png);
+}
+
+.nav-link {
+  /* text-transform: uppercase; */
+  font-weight: 400;
+}
+
+.vl {
+  border-left: 1px solid #fff;
+  height: 100%;
+}
+
+.fas {
+  color: #fff;
+}
+
+.login {
+  color: white;
+}
+#menu li a {
+  color: #1e1e1e !important;
+}
+#menu li a:hover {
+  color: var(--lightgreen) !important;
+}
+
+.menu-strip a {
+  color: var(--darkblue);
+}
+
+.menu-strip a:hover {
+  color: var(--lightgreen);
+}
+
+@media only screen and (max-width: 767px) {
+  #head1andtwo h1 {
+    font-size: 18px !important;
+  }
+  #head1andtwo h2 {
+    font-size: 16px !important;
+  }
+}
+/* Merging Regina's code */

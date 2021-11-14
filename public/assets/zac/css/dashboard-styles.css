@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+@import url("http://fonts.googleapis.com/css?family=Ruda:400,700,900");
+
+/*
+I didn't add much comments in this style, we don't have much confusing parts yet.
+plus this style sheet is for the backend so, no need to edit it yet until we finish the overall look and feel
+*/
+
+/* BASIC THEME CONFIGURATION */
+body {
+  color: #797979;
+  /* background: #f2f2f2; */
+  font-family: "Ruda", sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 14px;
+}
+
+:root {
+  /* Variables */
+  --offcanvas-width: 240px;
+  --topMenu: 56px;
+  --darkblue: #131532;
+  --lighterblue: #1e203c;
+  --lightgreen: #06d6a0;
+  --ligthred: #e63946;
+  --background: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.dashboard-home {
+  margin-bottom: 100px !important;
+}
+.admin-top-menu {
+  background-color: var(--darkblue);
+}
+#dashboard-sidebar {
+  width: var(--offcanvas-width);
+  background: var(--darkblue);
+}
+
+#exit-btn {
+  color: var(--darkblue);
+}
+.active {
+  background: var(--lighterblue);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: 5px solid var(--lightgreen);
+}
+
+.loss {
+  background: var(--ligthred);
+  color: #fff;
+}
+.gain {
+  background: var(--lightgreen);
+  color: #fff;
+}
+.bi-power {
+  color: var(--ligthred);
+}
+.sidebar-item-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-item-toggler .right-icon {
+  display: inline-flex;
+}
+.sidebar-item-toggler[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+  transition: all ease 0.25s;
+}
+
+.main-chart {
+  padding-top: 20px;
+}
+
+.box0:hover .box1 {
+  border-bottom: 1px solid #ffffff;
+}
+
+.box0 p {
+  text-align: center;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+
+.box0:hover p {
+  color: var(--lightgreen);
+}
+
+.box0:hover {
+  background: #ffffff;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box1 {
+  padding: 15px;
+  text-align: center;
+  color: #989898;
+  border-bottom: 1px solid #989898;
+}
+
+.box1 span {
+  font-size: 50px;
+}
+
+.box1 h3 {
+  text-align: center;
+}
+
+.box0:hover .box1 {
+  border-bottom: 1px solid #ffffff;
+}
+
+.box0 p {
+  text-align: center;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+.mb {
+  margin-bottom: 25px;
+}
+
+/* mt styles */
+.mtbox {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.mt {
+  margin-top: 25px;
+}
+
+/*White Panel styles*/
+.white-panel {
+  text-align: center;
+  background: #ffffff;
+  color: #ccd1d9;
+}
+
+.white-panel p {
+  margin-top: 5px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+.white-panel .white-header {
+  background: #f4f4f4;
+  padding: 3px;
+  margin-bottom: 15px;
+  color: #628b88;
+}
+.white-panel .small {
+  font-size: 10px;
+  color: #628b88;
+}
+
+.white-panel i {
+  color: #628b88;
+  padding-right: 4px;
+  font-size: 14px;
+}
+
+/* Helper class */
+.centered {
+  text-align: center;
+}
+.goleft {
+  text-align: left;
+}
+
+.goright {
+  text-align: right;
+}
+
+.chart .heading {
+  text-align: left;
+}
+.chart .heading span {
+  display: block;
+}
+.panel.green-chart .chart-tittle {
+  font-size: 16px;
+  padding: 15px;
+  display: inline-block;
+  font-weight: normal;
+  background: #99c262;
+  width: 100%;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+#barchart {
+  margin-bottom: -15px;
+  display: inline-block;
+}
+.panel.green-chart .chart-tittle .value {
+  float: right;
+  color: #c0f080;
+}
+.panel.green-chart {
+  background: #a9d96c;
+  color: #fff;
+}
+.panel.terques-chart {
+  background: transparent;
+  color: #797979;
+}
+.panel.terques-chart .chart-tittle .value {
+  float: right;
+  color: #fff;
+}
+.panel.terques-chart .chart-tittle .value a {
+  color: #2f2f2f;
+  font-size: 12px;
+}
+.panel.terques-chart .chart-tittle .value a:hover,
+.panel.terques-chart .chart-tittle .value a.active {
+  color: #68dff0;
+  font-size: 12px;
+}
+.panel.terques-chart .chart-tittle {
+  font-size: 16px;
+  padding: 15px;
+  display: inline-block;
+  font-weight: normal;
+  background: #39b7ac;
+  width: 100%;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* right sidebar styles */
+
+.ds .desc {
+  border-bottom: 1px solid #eaeaea;
+  display: inline-block;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.ds .desc:hover {
+  background: #f2f2f2;
+}
+
+.ds .thumb {
+  width: 30px;
+  margin: 0 10px 0 20px;
+  display: block;
+  float: left;
+}
+
+/* Visitors sub section styles */
+.border-head h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  color: #989898;
+}
+
+/* Active circle DOT */
+#active-dot {
+  background: rgb(99, 245, 41);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+}
+#active-dot .active-text {
+  margin-top: -20px;
+}
+
+.edit-profile-icon {
+  font-size: 30px;
+  margin-top: -30px !important;
+}
+
+/* chart styles */
+
+#chart-wrapper {
+  height: 300px !important;
+}
+
+/* 
+  Smaller Screens
+*/
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  offcanvas-backdrop::before {
+    display: none;
+  }
+  #dashboard-sidebar {
+    transform: none;
+    visibility: visible !important;
+    top: var(--topMenu);
+    height: calc(100%-var(--topMenu));
+    background: var(--darkblue);
+  }
+  #display-area,
+  .wrapper {
+    margin-left: var(--offcanvas-width);
+    background: var(--background);
+  }
+  #exit-btn {
+    color: var(--lightgreen);
+  }
+}

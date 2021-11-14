@@ -1,0 +1,20 @@
+zacecom(Document root)
+  app(application directory) 
+        conrollers(controllersdirectory)
+            about.php 
+            cart.php
+            contact.php
+            home.php 
+            products.php 
+            singleproduct.php  
+        core 
+        models 
+        views 
+        .htaccess 
+        init.php
+   config 
+   lib 
+   public(project root) 
+        assets 
+        .htaccess 
+        index.php 
